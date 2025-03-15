@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kalon-portolio.netlify.app/sitemap.xml
