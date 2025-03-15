@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/472db4ae67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <style></style>Kalon from Nepal</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/Kalon Albert.jpg" alt=""></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate web developer with expertise in Bootstrap, CSS, and responsive design. Adept at improving website layouts, user experience, and SEO strategies to enhance online presence. Experienced in structuring professional websites with a keen eye for design and functionality. Constantly exploring new ways to optimize digital experiences.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desigining Web/App interfaces</li>
+                            <li><span>Wb Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>UI/UX Training from Virinchi college</li>
+                            <li><span>2022</span><br>Robotics Training in Virinchi</li>
+                            <li><span>2023 </span><br> Customer Moderator at Yoodha Astrology</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021</span><br>Science, Physical at Moonlight secondary school</li>
+                            <li><span>2023</span><br>BICT from Virinchi College Lalitpur</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------------services---------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desigin</h2>
+                <p>I provide professional and visually appealing web design solutions tailored to your needs. My services include responsive website development, UI/UX enhancements, and SEO optimization to ensure your site looks great and performs efficiently. Whether you're building from scratch or refining an existing site, I create designs that are both functional and aesthetically pleasing.</p>
+                <a href="">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>   
+                <p>I provide professional and visually appealing web design solutions tailored to your needs. My services include responsive website development, UI/UX enhancements, and SEO optimization to ensure your site looks great and performs efficiently. Whether you're building from scratch or refining an existing site, I create designs that are both functional and aesthetically pleasing.</p>
+                <a href="">Learn more</a>
+            </div> 
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Desigin</h2>
+                <p>I provide professional and visually appealing web design solutions tailored to your needs. My services include responsive website development, UI/UX enhancements, and SEO optimization to ensure your site looks great and performs efficiently. Whether you're building from scratch or refining an existing site, I create designs that are both functional and aesthetically pleasing.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------------portfolio------------------------------------ -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="">
+                <div class="layer">
+                    <h3>Veterinary Clinic</h3>
+                    <p>A full fledge Vetnerinary clinic website which is user friendly and very effective.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/calculator.png" alt="">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>A full fledge Calculator which is user friendly and very effective.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work1.png" alt="">
+                <div class="layer">
+                    <h3>Veterinary Clinic</h3>
+                    <p>A full fledge Vetnerinary clinic website which is user friendly and very effective.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!-- ------------contact---------------- -->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kindkalon24@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9762419612</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Strange.fk.off" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/im_not_kalonn/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kalon-bhattarai-18052b345/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Kalon-(_)-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" id="" required>
+                    <input type="email" name="Email" id="" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 Kalon. All rights reserved. This material, including text, images, and other content, is protected under copyright laws.     <i class="fa-solid fa-frog"></i> </p>
+    </div>
+</div>
+
+
+
+<script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of  tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of  tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbytF2kMP9dg_09Q6MAVFhJMVM2ssqr4LFRjMAPZP1uJLS-iSDou70vL-eeU6sX7MxkjIg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message Sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
