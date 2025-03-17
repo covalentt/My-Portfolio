@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div id="calculator">
+            <div class="calculator-header">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </label>
+                </div>
+                <div class="calc-type">
+                    <span id="calc-type-display">Standard</span>
+                    <div class="dropdown">
+                        <button id="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#" data-type="standard">Standard</a>
+                            <a href="#" data-type="scientific">Scientific</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-container">
+                <div id="history-display"></div>
+                <input id="display" readonly>
+            </div>
+
+            <div id="scientific-panel">
+                <button onclick="calculateFunction('sqrt')" class="function-btn"><i class="fas fa-square-root-alt"></i></button>
+                <button onclick="calculateFunction('square')" class="function-btn">x<sup>2</sup></button>
+                <button onclick="calculateFunction('cube')" class="function-btn">x<sup>3</sup></button>
+                <button onclick="calculateFunction('power')" class="function-btn">x<sup>y</sup></button>
+                <button onclick="calculateFunction('sin')" class="function-btn">sin</button>
+                <button onclick="calculateFunction('cos')" class="function-btn">cos</button>
+                <button onclick="calculateFunction('tan')" class="function-btn">tan</button>
+                <button onclick="calculateFunction('log')" class="function-btn">log</button>
+                <button onclick="calculateFunction('ln')" class="function-btn">ln</button>
+                <button onclick="appendToDisplay('(')" class="function-btn">(</button>
+                <button onclick="appendToDisplay(')')" class="function-btn">)</button>
+                <button onclick="calculateFunction('pi')" class="function-btn">π</button>
+            </div>
+
+            <div id="keys">
+                <button onclick="backspace()" class="action-btn"><i class="fas fa-backspace"></i></button>
+                <button onclick="clearEntry()" class="action-btn">CE</button>
+                <button onclick="clearDisplay()" class="action-btn">C</button>
+                <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
+                
+                <button onclick="calculateFunction('inverse')" class="function-btn">1/x</button>
+                <button onclick="calculateFunction('sqrt')" class="function-btn"><i class="fas fa-square-root-alt"></i></button>
+                <button onclick="calculateFunction('square')" class="function-btn">x²</button>
+                <button onclick="appendToDisplay('/')" class="operator-btn"><i class="fas fa-divide"></i></button>
+                
+                <button onclick="appendToDisplay('7')" class="number-btn">7</button>
+                <button onclick="appendToDisplay('8')" class="number-btn">8</button>
+                <button onclick="appendToDisplay('9')" class="number-btn">9</button>
+                <button onclick="appendToDisplay('*')" class="operator-btn"><i class="fas fa-times"></i></button>
+                
+                <button onclick="appendToDisplay('4')" class="number-btn">4</button>
+                <button onclick="appendToDisplay('5')" class="number-btn">5</button>
+                <button onclick="appendToDisplay('6')" class="number-btn">6</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn"><i class="fas fa-minus"></i></button>
+                
+                <button onclick="appendToDisplay('1')" class="number-btn">1</button>
+                <button onclick="appendToDisplay('2')" class="number-btn">2</button>
+                <button onclick="appendToDisplay('3')" class="number-btn">3</button>
+                <button onclick="appendToDisplay('+')" class="operator-btn"><i class="fas fa-plus"></i></button>
+                
+                <button onclick="toggleSign()" class="number-btn"><i class="fas fa-plus-minus"></i></button>
+                <button onclick="appendToDisplay('0')" class="number-btn">0</button>
+                <button onclick="appendToDisplay('.')" class="number-btn">.</button>
+                <button onclick="calculate()" class="equals-btn"><i class="fas fa-equals"></i></button>
+            </div>
+
+            <div class="memory-keys">
+                <button onclick="memoryOperation('mc')" class="memory-btn">MC</button>
+                <button onclick="memoryOperation('mr')" class="memory-btn">MR</button>
+                <button onclick="memoryOperation('m+')" class="memory-btn">M+</button>
+                <button onclick="memoryOperation('m-')" class="memory-btn">M-</button>
+                <button onclick="memoryOperation('ms')" class="memory-btn">MS</button>
+            </div>
+        </div>
+
+        <div class="calc-footer">
+            <button id="history-btn"><i class="fas fa-history"></i> History</button>
+        </div>
+
+        <div id="history-panel" class="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button id="clear-history"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="history-content"></div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
